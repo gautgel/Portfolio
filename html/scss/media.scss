@@ -1,0 +1,18 @@
+@media (max-width: 1250px) 
+{
+    body
+    {
+        header
+        {
+            display: none;
+        }
+        .story, .sheet, .skills, .mySkills, .cases, .myProjects, .contact
+        {
+            display: none;
+        }
+        .mess
+        {
+            display: block;
+        }
+    }
+}

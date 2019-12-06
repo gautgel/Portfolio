@@ -1,0 +1,52 @@
+@import "var.scss";
+
+.loader
+{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background: $fontcolor;
+    z-index: 12345;
+    img
+    {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        width: 70px;
+        height: auto;
+        // animation: paperFly;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+    @keyframes paperFly 
+    {
+        0%
+        {
+            top: 35%;
+            left: 45%;
+        }    
+        25%
+        {
+            top: 40%;
+            left: 50%;
+        }
+        50%
+        {
+            top: 45%;
+            left: 55%;
+        }
+        75%
+        {
+            top: 35%;
+            left: 45%;
+        }
+        100%
+        {
+            top: 35%;
+            left: 45%;
+        }
+    }
+}
